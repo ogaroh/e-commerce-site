@@ -1,7 +1,7 @@
 /* stock container CSS */
 
 .product-container {
-    border: 1px solid #09697a;
+    border: 1.5px solid #09697a;
     border-radius: 5px;
     display: inline-block;
     padding: 10px;
@@ -10,4 +10,9 @@
 .product-container .name {
     display: inline-block;
     color: #09697a;
+}
+
+.product-container .image {
+    padding: 5px;
+    display: inline-block;
 }

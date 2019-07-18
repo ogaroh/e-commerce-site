@@ -1,7 +1,7 @@
 // product model
 export class Product {
 
-    image: string;
+    // image: string;
 
     constructor(
         public name: string,

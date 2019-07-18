@@ -14,11 +14,7 @@ export class ProductComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.product = new Product('Nike Off-White Sneakers', 'NKE' ,200);
+    this.product = new Product('Nike Off-White Sneakers', 'NKE', 200);
+    // this.product.image = 'src/assets/img/nike-offwhite.jpg';
   }
-
-  getImageUrl () {
-    this.product.image = this.product.image;
-  }
-
 }

@@ -3,10 +3,12 @@
         {{product.name + ' - (' + product.code + ')'}}
     </div>
     <hr>
-    <div class="image">
-        <img src="" alt="">
-    </div>
-    <div class="price">
-       Price: ${{product.price}}
+    <div class="card" style="width: 18rem;">
+        <img class="image card-img-top" src="../../../assets/img/nike-offwhite.jpg" alt="product-image">
+        <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.code }} ${{product.price}}</p>
+            <a href="#" class="btn btn-primary fas fa-plus-circle"></a>
+        </div>
     </div>
 </div>
