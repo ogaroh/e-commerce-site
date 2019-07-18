@@ -1,10 +1,13 @@
 // product model
 export class Product {
-
-    // image: string;
+    onSale: boolean = true;
 
     constructor(
         public name: string,
         public code: string,
         public price: number) { }
+
+    isOnSale(): boolean {
+        return this.onSale;
+    }
 }

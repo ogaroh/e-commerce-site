@@ -12,7 +12,17 @@
     color: #09697a;
 }
 
-.product-container .image {
+.product-container .image{
     padding: 5px;
     display: inline-block;
+}
+
+/* onsale /not on sale colors */
+
+.on-sale {
+    color: #0ea800;
+}
+
+.not-on-sale {
+    color: #da1616e8;
 }

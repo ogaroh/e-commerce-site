@@ -15,6 +15,10 @@ export class ProductComponent implements OnInit {
 
   ngOnInit() {
     this.product = new Product('Nike Off-White Sneakers', 'NKE', 200);
-    // this.product.image = 'src/assets/img/nike-offwhite.jpg';
+  }
+
+  toggleOnSale(event) {
+    console.log('changing onSale state', event);
+    this.product.onSale = !this.product.onSale;
   }
 }

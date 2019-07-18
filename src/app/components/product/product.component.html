@@ -3,12 +3,15 @@
         {{product.name + ' - (' + product.code + ')'}}
     </div>
     <hr>
-    <div class="card" style="width: 18rem;">
-        <img class="image card-img-top" src="../../../assets/img/nike-offwhite.jpg" alt="product-image">
-        <div class="card-body">
-            <h5 class="card-title">{{ product.name }}</h5>
-            <p class="card-text">{{ product.code }} ${{product.price}}</p>
-            <a href="#" class="btn btn-primary fas fa-plus-circle"></a>
+    <div [class]="product.isOnSale() ? 'on-sale' : 'not-on-sale'">
+        <div class="card" style="width: 18rem;">
+            <img class="image card-img-top" src="../../../assets/img/nike-offwhite.jpg" alt="product-image">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.code }} ${{product.price}}</p>
+                <button type="button" class="btn btn-info"
+                    (click)="toggleOnSale($event)"><i class="fas fa-random"></i> Toggle On Sale State</button>
+            </div>
         </div>
     </div>
 </div>
