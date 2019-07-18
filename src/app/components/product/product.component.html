@@ -1,17 +1,37 @@
 <div class="product-container">
     <div class="name">
-        {{product.name + ' - (' + product.code + ')'}}
+        <h5>{{product.name + ' - (' + product.code + ')'}}</h5>
     </div>
     <hr>
     <div [class]="product.isOnSale() ? 'on-sale' : 'not-on-sale'">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 24rem;">
             <img class="image card-img-top" src="../../../assets/img/nike-offwhite.jpg" alt="product-image">
             <div class="card-body">
-                <h5 class="card-title">{{ product.name }}</h5>
-                <p class="card-text">{{ product.code }} ${{product.price}}</p>
-                <button type="button" class="btn btn-info"
-                    (click)="toggleOnSale($event)"><i class="fas fa-random"></i> Toggle On Sale State</button>
+                <h4 class="card-title"> Price: ${{product.price}}</h4>
+                <hr>
+
+                <!-- add or remove items from cart -->
+                <div class="button-container">
+                    <h6>Quantity</h6>
+                    <hr>
+                    <div class="input-group-sm flex-row" style="width: 21rem;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><button><i class="fas fa-plus-circle"></i></button>
+                            </span>
+                        </div>
+                        <input type="number" class="form-control" aria-label="qty">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><button><i class="fas fa-minus-circle"></i></button></span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
+<!-- toggle onSale -->
+<!-- <button type="button" class="btn btn-info"
+                    (click)="toggleOnSale($event)"><i class="fas fa-random"></i> Toggle On Sale State</button> -->

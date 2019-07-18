@@ -26,3 +26,15 @@
 .not-on-sale {
     color: #da1616e8;
 }
+
+
+.button-container {
+    color: #09697a;
+    border: 1px solid #09697a;
+    border-radius: 3.5px;
+    display: inline-block;
+    padding: 5px;
+}
+.button-container button {
+    padding: 5px;
+}
